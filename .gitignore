@@ -1,2 +1,2 @@
-.vagrant
-roles/login_user/files/login-key*
+ansible/.vagrant
+ansible/roles/login_user/files/login-key*
