@@ -26,25 +26,22 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 $ source /etc/profile.d/goenv.sh
 ```
 
-## Vimの設定
+## vim-go-ide
 
- * gocode
-
-```
-$ go get github.com/nsf/gocode
-```
-
- * .vimrc
+go言語用のvim設定を作成する
 
 ```
-filetype off
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
-filetype plugin indent on
-syntax on
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
-set completeopt=menu,preview
+git clone git@github.com:farazdagi/vim-go-ide.git ~/.vim_go_runtime
+sh ~/.vim_go_runtime/bin/install
+mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+alias govim='vim -u ~/.vimrc.go'
+```
+
+go言語用のtagsを用意する
+
+```
+go get -u github.com/jstemmer/gotags
+gotags -R * > tags
 ```
 
 ## Hello World
@@ -84,5 +81,5 @@ kosuke@go ~ $ file ./hello
 
  * https://golang.org/dl/
  * https://go-tour-jp.appspot.com/welcome/1
-
+ * https://github.com/farazdagi/vim-go-ide
 
