@@ -44,6 +44,15 @@ go get -u github.com/jstemmer/gotags
 gotags -R * > tags
 ```
 
+```
+:GoInstallBinaries
+```
+
+```
+cat /home/kosuke/.vim_go_runtime/custom_config.vim
+nnoremap <C-[> :pop<CR>
+```
+
 ## Hello World
 
  * hello.go
