@@ -14,7 +14,6 @@ $ ansible-playbook -i development site.yml
 
 ```
 kosuke@go ~ $ lsb_release -a
-kosuke@go ~ $ lsb_release -a
 No LSB modules are available.
 Distributor ID: Debian
 Description:    Debian GNU/Linux 8.6 (jessie)
