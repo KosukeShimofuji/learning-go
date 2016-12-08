@@ -10,7 +10,7 @@
     creates: /home/{{login_user}}/local/go/VERSION 
 
  - name: create go root directory
-   command: su - {{ login_user }} -c "mkdir /home/{{login_user}}/go"
+   command: su - {{ login_user }} -c "mkdir -p /home/{{login_user}}/go/{bin,pkg,src}"
    args:
     creates: /home/{{login_user}}/go/
 
@@ -32,4 +32,9 @@
     state=present
     line='export PATH=$PATH:$GOROOT/bin:$GOPATH/bin'
 
+ - name: install gotags
+   command: su - {{ login_user }} -c "go get github.com/jstemmer/gotags"
+
+ - name: install guru
+   command: su - {{ login_user }} -c "go get golang.org/x/tools/cmd/guru"
 

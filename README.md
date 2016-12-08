@@ -2,28 +2,31 @@
 
 ## 開発環境の整備
 
+ * deploy
+
+```
+$ git clone git@github.com:KosukeShimofuji/learning-go.git 
+$ cd ansible
+$ ansible-playbook -i development site.yml
+```
+
  * 環境の情報
 
 ```
 kosuke@go ~ $ lsb_release -a
+kosuke@go ~ $ lsb_release -a
 No LSB modules are available.
 Distributor ID: Debian
-Description:    Debian GNU/Linux 8.5 (jessie)
-Release:        8.5
+Description:    Debian GNU/Linux 8.6 (jessie)
+Release:        8.6
 Codename:       jessie
 ```
 
  * go言語のインストールと設定
 
 ```
-$ wget https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
-$ sudo tar -C /usr/local -xzf go1.6.linux-amd64.tar.gz
-$ mkdir $HOME/go
-$ cat /etc/profile.d/goenv.sh
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-$ source /etc/profile.d/goenv.sh
+$ go version
+go version go1.7.1 linux/amd64
 ```
 
 ## vim-go-ide
