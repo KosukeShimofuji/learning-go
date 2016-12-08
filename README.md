@@ -101,4 +101,8 @@ git clone git@github.com:KosukeShimofuji/learning-go.git
  * https://golang.org/dl/
  * https://go-tour-jp.appspot.com/welcome/1
  * https://github.com/farazdagi/vim-go-ide
+ * https://github.com/STNS/libnss_stns
+ * http://qiita.com/yugui/items/e71d3d0b3d654a110188
+ * http://qiita.com/yugui/items/cc490d080e0297251090
+ * https://speakerdeck.com/pyama86/goyan-yu-deshi-zhuang-surulinuxnameserver
 
