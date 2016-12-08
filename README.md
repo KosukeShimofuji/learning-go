@@ -89,6 +89,14 @@ kosuke@go ~ $ file ./hello
 
 バイナリはstatic linkされている。
 
+## ディレクトリ構成
+
+```
+mkdir -p go/src/github.com/KosukeShimfouji/
+cd go/src/github.com/KosukeShimfouji/
+git clone git@github.com:KosukeShimofuji/learning-go.git
+```
+
 # 参考文献
 
  * https://golang.org/dl/
